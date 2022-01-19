@@ -1,4 +1,4 @@
-import { ActionType } from "./action-types"
+import { ActionType } from "../action-types/action-types"
 
 interface SearchPackageAction {
     type : ActionType.SEARCH_PACKAGES

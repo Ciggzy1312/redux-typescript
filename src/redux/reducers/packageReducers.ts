@@ -1,4 +1,4 @@
-import { ActionType } from "../actions/action-types"
+import { ActionType } from "../action-types/action-types"
 import { Action } from "../actions/actions"
 
 interface PackageState {
