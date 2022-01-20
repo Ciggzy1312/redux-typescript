@@ -1,10 +1,12 @@
 import React from 'react';
 import './App.css';
+import PackagesList from './components/PackagesList';
 
 function App() {
   return (
     <div className="App">
-      React Redux Typescript
+      All package name list
+      <PackagesList />
     </div>
   );
 }

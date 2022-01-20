@@ -8,10 +8,11 @@ export const searchPackage = (packageName : string) => {
         dispatch({type: ActionType.SEARCH_PACKAGES })
 
         try {
-            const { data } = await axios.get("https://registry.npmjs.org/-/v1/search")
-            params : {
-                text : packageName
-            }
+            const { data } = await axios.get("https://registry.npmjs.org/-/v1/search",{
+                params : {
+                    text : packageName
+                }
+            })
 
             const names = data.objects.map((result:any)=>(
                 result.package.name

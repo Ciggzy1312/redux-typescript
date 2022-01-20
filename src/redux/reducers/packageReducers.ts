@@ -3,11 +3,17 @@ import { Action } from "../actions/actions"
 
 interface PackageState {
     data : string[];
-    loading : boolean,
+    loading : boolean;
     error : string | null
 }
 
-const reducer = (state : PackageState, action : Action) : PackageState=>{
+const initialState = {
+    data : [],
+    loading : false,
+    error : null
+}
+
+const reducer = (state : PackageState = initialState, action : Action) : PackageState=>{
     switch(action.type){
         case ActionType.SEARCH_PACKAGES :
             return {
