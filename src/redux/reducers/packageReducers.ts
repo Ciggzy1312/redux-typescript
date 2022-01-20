@@ -1,5 +1,5 @@
-import { ActionType } from "../action-types/action-types"
-import { Action } from "../actions/actions"
+import { ActionType } from "../action-types"
+import { Action } from "../actions"
 
 interface PackageState {
     data : string[];
